@@ -1,0 +1,42 @@
+
+[
+  {
+    "id": 1,
+    "label": "Home",        
+    "dataareaid": ["*"],
+    "roles": ["*"],
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "label": "About",        
+    "dataareaid": ["*"],
+    "roles": ["*"],
+    "link": "/about"
+  },
+  {
+    "id": 3,
+    "label": "Services",       
+    "dataareaid": ["*"],
+    "roles": ["systemadmin"],
+    "link": "/services", 
+    "children": [
+      { "id": 4, "label": "Web Development", "link": "/services/web-development" },
+      { "id": 5, "label": "App Development", "link": "/services/app-development", "dataareaid": ["113"] }
+    ]    
+  },
+  { 
+    "id": 6,
+    "label": "Contact",        
+    "dataareaid": ["102","104"],
+    "roles": ["systemadmin","zoneadmin","subzoneadmin"],
+    "link": "/contact" 
+  },
+  { 
+    "id": 7,
+    "label": "All Company",        
+    "dataareaid": ["102","104","113"],
+    "roles": ["systemadmin","zoneadmin","subzoneadmin"],
+    "link": "/contact" 
+  }
+]
